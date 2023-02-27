@@ -1,0 +1,64 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script><script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script><link rel="icon" href="./assets/images/employee-card.ico" type="image/icon"/><style>@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Mukta";
+			}
+
+			body {
+				overflow: hidden;
+			}
+			.load {
+				background-color: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100vh;
+				min-width: 100vw;
+				z-index: 3;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.load span {
+				font-size: 3em;
+				animation: loading 1s ease-in-out infinite;
+				animation-delay: calc(var(--i) * 200ms);
+			}
+
+			.load > div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			@keyframes loading {
+				0% {
+					transform: translateY(0);
+				}
+
+				50% {
+					transform: translateY(10px);
+				}
+			}
+			.none {
+				display: none;
+			}
+
+			.loading-bar {
+				width: 50%;
+			}
+
+			.road {
+				width: 100%;
+				height: 20px;
+			}
+			.contact-info > div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}</style><title>Nguyễn Như Tài</title><script defer="defer" src="main.ad939dcf29f144058bf4.js"></script></head><body><div class="load"><div><span style="--i: 0">L</span> <span style="--i: 1">o</span> <span style="--i: 2">a</span> <span style="--i: 3">d</span> <span style="--i: 4">.</span> <span style="--i: 5">.</span> <span style="--i: 6">.</span></div><p class="percent">0%</p><div class="loading-bar"><svg width="503" height="2" viewBox="0 0 503 2" fill="none"><path d="M0 1H503" stroke="black" class="road" style="stroke-dasharray: 503; stroke-dashoffset: 503"/></svg></div></div><div class="main"><canvas class="app"></canvas><section class="buttons"><button class="button left"><ion-icon name="caret-back-outline" class="back-icon"></ion-icon></button> <button class="button right"><ion-icon name="caret-forward-outline" class="forward-icon"></ion-icon></button></section></div><div class="contact none"><form id="contact-form"><h1>Contact Me</h1><div class="contact-info"><div><ion-icon name="location-outline"></ion-icon><span>Quang Trung software center, District 12</span></div><div><ion-icon name="phone-portrait-outline"></ion-icon><span>+84 0941605643</span></div><div><ion-icon name="mail-outline"></ion-icon><span>nhutai1302@gmail.com</span></div></div><div class="form"><div class="name"><input type="hidden" name="contact_number"/> <label>Your name:</label><br/><input name="from_name"/></div><div class="email"><label>Your email:</label><br/><input type="email" name="from_email"/></div><div class="message"><label>Message:</label><br/><textarea name="message"></textarea></div></div><p class="info"></p><input type="submit" value="Send"/></form></div></body></html>
